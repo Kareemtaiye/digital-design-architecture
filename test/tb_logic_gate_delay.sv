@@ -15,6 +15,10 @@ module tb_logic_gate_delay();
 
     // 3. Drive the inputs over time
     initial begin
+        // --- ADD THESE TWO LINES FOR EDA PLAYGROUND ---
+        $dumpfile("dump.vcd"); // Tells the simulator the name of the file to create
+        $dumpvars(0, tb_logic_gate_delay); // Tells it to record EVERY wire inside tb_logic_gate_delay
+
         // Print changes to the console automatically whenever variables update
         $monitor("At time %0tns: a=%b b=%b c=%b -> y=%b", $time, a, b, c, y);
 
@@ -24,10 +28,14 @@ module tb_logic_gate_delay();
         // Wait 10 nanoseconds, then change inputs
         #10;
         a = 1; b = 0; c = 0;
+
+        // Wait 10 nanoseconds, then change inputs
+        #5;
+        a = 1; b = 0; c = 0;
         
         // Wait another 10 nanoseconds, change inputs again
-        #10;
-        a = 1; b = 0; c = 1;
+        #5;
+        a = 0; b = 1; c = 0;
 
         // Finish the simulation
         #10;

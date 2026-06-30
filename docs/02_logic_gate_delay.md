@@ -19,7 +19,7 @@ When running the simulation, I observed the incredible way of how the simulator 
 
 Simulation tool used: EDA Playground & Wavetrace(VScode Ext).
 
-![Gate Delay Propagation Waveform](../assets/logic_gate_delay.png)
+![Gate Delay Propagation Waveform](../assets/logic_gate_delay_wvf.png)
 
 ## Key Observations
 

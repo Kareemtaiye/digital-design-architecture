@@ -18,7 +18,7 @@ The always statement is written in the form:
           statement;
 ```
 
-The statement is executed only when the specified events in the sensitivity list occurs.
+The statement is executed only when the specified events in the sensitivity list occur.
 
 ## 2. The parallel nature of hardware
 

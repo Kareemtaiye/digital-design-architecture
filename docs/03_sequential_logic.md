@@ -20,7 +20,7 @@ The always statement is written in the form:
 
 The statement is executed only when the specified events in the sensitivity list occurs.
 
-## 2. The paralle nature of hardware
+## 2. The parallel nature of hardware
 
 Unlike the software blocking assignment(**=**), where code executes strictly line-by-line, that is not how a circuot work.
 Non blocking assignment(_<=_) is design to model, parallel physicla hardware, where everything happens at the exact same time.

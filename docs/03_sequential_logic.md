@@ -11,8 +11,9 @@ Seq. blocks uses the **always** statement to handle the sensitivity list.
 
 The always statement is written in the form:
 
-```always @(sensitivity list)
-     statement;
+```
+     always @(sensitivity list)
+          statement;
 ```
 
 The statement is executed only when the specified events in the sensitivity list occurs.

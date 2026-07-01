@@ -6,6 +6,5 @@ module flopenr(input logic clk,
     //asynchronous reset
     always_ff @(posedge clk, posedge reset)
         if(reset) q <= 4'b0;
-
         else if(en) q <= d;
 endmodule

@@ -1,5 +1,7 @@
 ## The big shift
 
+## 1. Sensitivity list
+
 Unlike before, electricity pass through gates, propagation delay happened, and the output is updated immediately.
 When the inputs are turned off, the outputs become lost too(instantly).
 
@@ -17,3 +19,19 @@ The always statement is written in the form:
 ```
 
 The statement is executed only when the specified events in the sensitivity list occurs.
+
+## 2. The paralle nature of hardware
+
+Unlike the software blocking assignment(**=**), where code executes strictly line-by-line, that is not how a circuot work.
+Non blocking assignment(_<=_) is design to model, parallel physicla hardware, where everything happens at the exact same time.
+All right-hand sides are evaluated simultaneously and their values are assigned to the left-hand sides only after the block finishes.
+
+```
+     always_ff @(posedge clk)
+        begin
+            n1 <= d;
+            q <= n1;
+        end
+```
+
+q takes the old value of n1. It will recieve the new value of n1 on the second clock edge(After it has resolved to a stable value).

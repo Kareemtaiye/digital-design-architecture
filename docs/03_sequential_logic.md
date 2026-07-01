@@ -1,4 +1,4 @@
-## The big shift
+## The Big Shift
 
 ## 1. Sensitivity list
 

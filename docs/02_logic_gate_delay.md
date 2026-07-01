@@ -4,12 +4,13 @@ In this log, I analyze how physical gate delays compunds across a circuit layout
 
 ## The Theory
 
-Digital logic doesn't compute instantly; transistors require physical time to switch state based on their capacitance. Using directives like \` \`timescale 1ns/1ps \`, we can model sequential delays down to the picosecond:
+Digital logic doesn't compute instantly; transistors require physical time to switch state based on their capacitance. Using directives like ``timescale 1ns/1ps `, we can model sequential delays down to the picosecond:
 
-\`\`\`systemverilog
+```
+systemverilog
 // Parallel inversion layer introducing a 1ns gate delay
 assign #1 {ab, bb, cb} = ~{a, b, c};
-\`\`\`
+```
 
 Using **destructuring assignments** on the left side of the block allows us to immediately shatter multi-bit buses into explicitly named, readable signal tracks, mimicking the physical separation of wires across a microchip layout.
 

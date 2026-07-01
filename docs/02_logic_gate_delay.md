@@ -4,7 +4,7 @@ In this log, I analyze how physical gate delays compunds across a circuit layout
 
 ## The Theory
 
-Digital logic doesn't compute instantly; transistors require physical time to switch state based on their capacitance. Using directives like ``timescale 1ns/1ps `, we can model sequential delays down to the picosecond:
+Digital logic doesn't compute instantly; transistors require physical time to switch state based on their capacitance. Using directives like `timescale 1ns/1ps`, we can model sequential delays down to the picosecond:
 
 ```
 systemverilog

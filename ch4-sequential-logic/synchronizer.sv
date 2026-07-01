@@ -1,3 +1,4 @@
+
 module sync(input logic clk, 
             input logic d,
             output logic q);

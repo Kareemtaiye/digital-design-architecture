@@ -9,6 +9,7 @@ module flopr(input logic clk,
         else q <= d;
 endmodule
 
+
 module flopr(input logic clk,
              input logic reset.
              input logic[3:0]d,

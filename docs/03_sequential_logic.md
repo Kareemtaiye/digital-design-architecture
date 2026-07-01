@@ -8,3 +8,11 @@ The retain their value until they are explicity told to change them.
 So unlike combinational logic reacts instantly whenever any input on the right side changes, the sequential logic reacts only when a specific even happens(like a clock edge).
 
 Seq. blocks uses the **always** statement to handle the sensitivity list.
+
+The always statement is written in the form:
+
+```always @(sensitivity list)
+     statement;
+```
+
+The statement is executed only when the specified events in the sensitivity list occurs.

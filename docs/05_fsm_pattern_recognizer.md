@@ -74,6 +74,8 @@ module patterndetectormealy(input logic clk,
     assign y = (a & state == S1);
 endmodule
 
-
-
 ```
+
+### Simulation
+
+![pattern recognition FSM Waveform](../assets/pattern_recognizer_wvf.png)

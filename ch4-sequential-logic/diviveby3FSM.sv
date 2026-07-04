@@ -21,6 +21,3 @@ module divideby3FSM(input logic clk,
     //output logic
     assign y = (state == S0);
 endmodule
-
-
-

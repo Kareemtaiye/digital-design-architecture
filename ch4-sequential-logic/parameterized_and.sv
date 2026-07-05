@@ -4,9 +4,7 @@ module andN #(
         input logic[N-1:0]a,
         output logic y
     );
-
     logic x[N-1:0];
-
 
     genvar i;
 

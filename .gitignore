@@ -1,6 +1,8 @@
+build/
 sim_progra*
 *.digitaljs
 *.vvp
 *.vcd
+*.out
 
 .DS_Store

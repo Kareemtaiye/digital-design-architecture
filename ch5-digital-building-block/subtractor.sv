@@ -4,6 +4,7 @@ module subtractor
         output logic[N-1:0]y
     );
 
+    // assign y = a + (~b) + 1;
     assign y = a - b;
 endmodule
 

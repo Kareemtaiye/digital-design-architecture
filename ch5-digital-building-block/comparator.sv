@@ -8,4 +8,5 @@ module comparator # (parameter N = 8)
     assign gte = (a >= b);
     assign lt = (a < b);
     assign lte = (a <= b);
+    
 endmodule

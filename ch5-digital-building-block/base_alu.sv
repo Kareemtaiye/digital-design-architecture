@@ -20,8 +20,8 @@ module alu # (
       case(alucontrol) 
         2'b00:      result = sum; //ADD
         2'b01:      result = sum; //SUB
-        2'b10:      result = A & B; //AND
-        2'b11:      result = A | B; //OR
+        2'b10:      result = a & b; //AND
+        2'b11:      result = a | b; //OR
         default:    result = {N{1'b0}};
       endcase
     end

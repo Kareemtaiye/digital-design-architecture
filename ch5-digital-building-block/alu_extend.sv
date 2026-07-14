@@ -30,7 +30,7 @@ module alu_extend # (
 
    //3. Status flags
    // N (Negative): Bit 3
-   assign flags[3] = result[N-1];
+   assign flags[3] = sum[N-1];
 
    //Z (Zero): Bit 2
    assign flags[2] = (result == {N{1'b0}});

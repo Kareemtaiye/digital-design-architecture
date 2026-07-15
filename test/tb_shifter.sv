@@ -13,8 +13,11 @@ module tb_shifter();
 
     initial 
         begin
+            $dumpfile("build/waveforms/shifter.vcd");
+            $dumpvars(0, tb_shifter);
+
             $display("Starting Shifter simulation.....");
-          $monitor("Time=0%t, A=%h | shifttype=%b | shamt=%b Y=%h", $time, a, shifttype, shamt, y);
+            $monitor("Time=0%t, A=%h | shifttype=%b | shamt=%b Y=%h", $time, a, shifttype, shamt, y);
 
             //1. Testing SLL
             shifttype = 2'b00;

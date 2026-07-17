@@ -8,7 +8,6 @@ module tb_ram ();
   logic [M-1:0] din;
   logic [M-1:0] dout;
 
-  // Instantiate the RAM module
   ram #(
       .N(N),
       .M(M)
@@ -20,7 +19,7 @@ module tb_ram ();
       .dout(dout)
   );
 
-  // Clock generator (10ns period)
+  // Clock generator 
   always begin
     clk = 1;
     #5;

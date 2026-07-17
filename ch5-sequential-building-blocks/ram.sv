@@ -16,4 +16,5 @@ module ram #(
   end
 
   assign dout = mem[adr];
+
 endmodule

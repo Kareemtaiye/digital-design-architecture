@@ -33,8 +33,8 @@ All detailed engineering logs, circuit analyses, and waveform breakdown reports 
 digital-design-architecture/
 ├── docs/                         # Detailed engineering logs & conceptual breakdowns
 │   └── 03_propagation_delays.md
-├── images/                       # Waveform screenshots and hardware schematics
+├── assets/                       # Waveform screenshots and hardware schematics
 │   └── gate_delay_waveform.png
-├── src/                          # SystemVerilog design modules (.sv)
+├── *sv_folders*/                          # SystemVerilog design modules (.sv)
 └── tb/                           # Testbenches and simulation vectors
 ```

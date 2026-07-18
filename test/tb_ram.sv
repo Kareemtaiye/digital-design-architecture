@@ -42,8 +42,7 @@ module tb_ram ();
     @(posedge clk);
     #1;
 
-    // 1. Test Asynchronous Read of Uninitialized Memory
-    // ontent is unpredictable/garbage on power-up!
+    // 1. Test Asynchronous Read of Uninitialized Memory(unpredictable/garbage on power-up)
     adr = 6'd5;
     #1;  // Give combinational logic a tiny moment
     $display("Time=%0t | Reading uninitialized Address 5: dout = %h (Expect: Garbage/X)", $time,

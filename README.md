@@ -2,28 +2,31 @@
 
 A repository documenting my deep-dive into digital logic, computer architecture, and the hardware-software interface (RISC-V).
 
-Rather than chasing superficial performance or academic grades, this repository serves as a technical ledger of my journey mastering the "silicon-to-software" stack—building a raw, physical intuition for how electricity moving through transistors ultimately powers high-level software and systems AI.
+Rather than chasing superficial abstractions or memorizing slides, this repository serves as a technical ledger of my journey mastering the "silicon-to-software" stack—building a raw, physical intuition for how electricity moving through transistors ultimately powers high-level software, embedded systems, and hardware accelerators.
 
 ---
 
 ## Tech Stack & Tooling
 
-- **HDL:** SystemVerilog
-- **Simulation Engine:** Icarus Verilog (`iverilog`), `vvp`
-- **Verification & Analysis:** EDA Playground, EPWave (HTML5 Waveform Viewer), DigitalJS (VS Code Integration)
-- **Target Architecture:** RISC-V
+* **HDL:** SystemVerilog
+* **Simulation & Verification:** Icarus Verilog (`iverilog`), `vvp`, GTKWave
+* **Synthesis & Visual Analysis:** Yosys, DigitalJS (VS Code Integration)
+* **Target Architecture:** RISC-V (RV32I)
+* **Assembly & C Toolchain:** GCC / LLVM 
 
 ---
 
-## Technical Insights & Hardware Intuition
+## Technical Insights & Engineering Logs
 
-All detailed engineering logs, circuit analyses, and waveform breakdown reports are organized inside the [`/docs`](./docs) folder.
+All detailed engineering write-ups, circuit analysis reports, and timing breakdowns are organized inside the `/docs` directory:
 
-### Featured Logs:
-
-- **[Propagation Delays & Critical Paths](./docs/03_propagation_delays.md):** An empirical look at how physical gate delays compound across sequential layers. Highlights the discovery of simulator "lazy evaluation" when handling unknown (`x`) states and asynchronous signal transitions.
-- **[The Synchronizer & Metastability (Upcoming)]:** An analysis of clock domain crossing, the physical behavior of a D flip-flop caught on the "knife's edge" of setup-time violations, and how dual-stage airlocks mitigate MTBF.
-- **[Sequential Logic Boundaries (Upcoming)]:** Breaking down the architectural hazards of level-triggered D Latches vs. edge-triggered D Flip-Flops, and avoiding unintended latch synthesis by escaping software-centric coding habits.
+* **`01_z_and_x.md`** — Tri-state buses, floating values, and simulator representation of unknown states.
+* **`02_logic_gate_delay.md`** — Propagation delays, critical paths, and empirical observation of simulator state evaluation during asynchronous transitions.
+* **`03_sequential_logic.md`** — Clocking, state retention, and feedback loops in hardware logic.
+* **`04_latches_flipflops.md`** — Architectural differences between level-triggered latches and edge-triggered flip-flops; strategies for preventing unwanted latch synthesis.
+* **`05_fsm_pattern_recognizer.md`** — Mealy vs. Moore state machines, state encoding, and sequence detection.
+* **`06_counter.md`** — Synchronous state counters, enable logic, and ripple carry propagation.
+* **`07_memory_hierarchy.md`** — Register files, RAM arrays, and address decoding structures.
 
 ---
 
@@ -31,10 +34,17 @@ All detailed engineering logs, circuit analyses, and waveform breakdown reports 
 
 ```text
 digital-design-architecture/
-├── docs/                         # Detailed engineering logs & conceptual breakdowns
-│   └── 03_propagation_delays.md
-├── assets/                       # Waveform screenshots and hardware schematics
-│   └── gate_delay_waveform.png
-├── *sv_folders*/                          # SystemVerilog design modules (.sv)
-└── tb/                           # Testbenches and simulation vectors
-```
+├── assets/                          # Waveform captures, state diagrams, and schematics
+├── build/                           # Output artifacts (sim executables, synth outputs, VCDs)
+│   ├── sim/                         # Compiled simulation binaries (.out)
+│   ├── synth/                       # DigitalJS hardware visualizations
+│   └── waveforms/                   # Value Change Dump (.vcd) timing files
+├── ch4-combinational-logic/         # Basic logic gates, adders, muxes, and tri-states
+├── ch4-sequential-logic/            # Flip-flops, registers, FSMs, and decoders
+├── ch5-digital-building-block/      # ALUs, subtractors, shifters, and comparators
+├── ch5-sequential-building-blocks/ # Counters, shift registers, RAM, ROM, and Register File
+├── ch6-risc-v-architecture/         # RISC-V ISA exploration and processor implementation
+│   ├── 01_add/                      # Assembly vs. C translation examples
+│   └── hdl/                         # RISC-V CPU core implementation (.sv)
+├── docs/                            # Deep-dive conceptual write-ups & logs
+└── test/                            # Unit testbenches (.sv) and vector stimulus files

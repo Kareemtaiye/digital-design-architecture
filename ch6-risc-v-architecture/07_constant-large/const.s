@@ -1,0 +1,2 @@
+lui s2, 0xABCDE 	#s2 = 0xABCDE000
+addi s2, s2, 0x123	#s2 = 0xABCDE123	

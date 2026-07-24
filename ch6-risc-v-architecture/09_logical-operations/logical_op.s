@@ -2,7 +2,7 @@
 lui s0, 0x12345		# Upper 20 bits
 addi s0, s0, 0x678	# s0 = 0x12345678
 
-lui s1, 0x46A11		# Upper 20 bits
+lui s1, 0x46A12	# Upper 20 bits (Added 1 to the original value cos the addi instruction below will sign extend the remaining 12 bits)
 addi s1, s1, 0xB77	# s1 = 0x46A11B77
 
 lui s2, 0xFFFF0		# s2 = 0XFFFF0000

@@ -22,8 +22,5 @@ int main() {
     // 4. Invert (NOT) all bits of s1 using XOR with -1 (0xFFFFFFFF)
     uint32_t s8 = ~s1;
 
-
-    printf("s3: %x \n s4: %x \n s5: %x \n s6: %x \n s7: %x \n s8: %x \n", s3, s4, s5, s6, s7, s8);
-
     return 0;
 }

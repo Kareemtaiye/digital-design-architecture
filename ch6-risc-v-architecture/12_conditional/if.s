@@ -5,6 +5,6 @@ main:
      bne s0, s1, L1 #skip if (apples != oranges)
      add s2, s3, s4
     L1:
-     sub s0, s1, s4 # apples = oranges - h
+     sub s4, s1, s4 # apples = oranges - h
 
     

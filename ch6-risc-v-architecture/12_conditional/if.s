@@ -9,4 +9,8 @@ main:
     L1:
      addi, s2, 1 # c = 1
 
+    li a0, 0
+    ret 
+    
+
     

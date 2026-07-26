@@ -1,15 +1,14 @@
 int main() {
-    char s0[10]  = "apples";
-    char s1[10]  = "oranges";
-    char s2  = 'f';
-    char s3  = 'g';
-    char s4  = 'h';
+    int a = 10;
+    int b = 15;
+    int c;
 
-    if(s0 == s1){
-        s2 = s3 + s4;
+    if(a == b){
+        c = 1;
     }
 
-    s4 = s1 - s4;
-    return 0;
+   c = 2;
+
+   return 0;
 }
 

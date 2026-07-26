@@ -1,10 +1,12 @@
 .globl main
 
-#s0 = apples, s1 = oranges s2 = f, s3 = g, s4 = h
+#s0 = a, s1 = b s2 = c
 main:
-     bne s0, s1, L1 #skip if (apples != oranges)
-     add s2, s3, s4
+     addi s0, zero, 10
+     addi, s1, zero, 15
+     bne s0, s1, L1 #skip if (a != b)
+     addi s2, zero, 2   # c = 2
     L1:
-     sub s4, s1, s4 # apples = oranges - h
+     addi, s2, 1 # c = 1
 
     

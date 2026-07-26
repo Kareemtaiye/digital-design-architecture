@@ -45,6 +45,7 @@ digital-design-architecture/
 ├── ch5-sequential-building-blocks/ # Counters, shift registers, RAM, ROM, and Register File
 ├── ch6-risc-v-architecture/         # RISC-V ISA exploration and processor implementation
 │   ├── 01_add/                      # Assembly vs. C translation examples
+|   |--....
 │   └── hdl/                         # RISC-V CPU core implementation (.sv)
 ├── docs/                            # Deep-dive conceptual write-ups & logs
 └── test/                            # Unit testbenches (.sv) and vector stimulus files

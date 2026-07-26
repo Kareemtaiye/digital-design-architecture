@@ -8,11 +8,11 @@ Rather than chasing superficial abstractions or memorizing slides, this reposito
 
 ## Tech Stack & Tooling
 
-* **HDL:** SystemVerilog
-* **Simulation & Verification:** Icarus Verilog (`iverilog`), `vvp`, GTKWave
-* **Synthesis & Visual Analysis:** Yosys, DigitalJS (VS Code Integration)
-* **Target Architecture:** RISC-V (RV32I)
-* **Assembly & C Toolchain:** GCC / LLVM 
+- **HDL:** SystemVerilog
+- **Simulation & Verification:** Icarus Verilog (`iverilog`), `vvp`, GTKWave
+- **Synthesis & Visual Analysis:** Yosys, DigitalJS (VS Code Integration)
+- **Target Architecture:** RISC-V (RV32I)
+- **Assembly & C Toolchain:** GCC / LLVM
 
 ---
 
@@ -20,17 +20,17 @@ Rather than chasing superficial abstractions or memorizing slides, this reposito
 
 All detailed engineering write-ups, circuit analysis reports, and timing breakdowns are organized inside the `/docs` directory:
 
-* **`01_z_and_x.md`** — Tri-state buses, floating values, and simulator representation of unknown states.
-* **`02_logic_gate_delay.md`** — Propagation delays, critical paths, and empirical observation of simulator state evaluation during asynchronous transitions.
-* **`03_sequential_logic.md`** — Clocking, state retention, and feedback loops in hardware logic.
-* **`04_latches_flipflops.md`** — Architectural differences between level-triggered latches and edge-triggered flip-flops; strategies for preventing unwanted latch synthesis.
-* **`05_fsm_pattern_recognizer.md`** — Mealy vs. Moore state machines, state encoding, and sequence detection.
-* **`06_counter.md`** — Synchronous state counters, enable logic, and ripple carry propagation.
-* **`07_memory_hierarchy.md`** — Register files, RAM arrays, and address decoding structures.
+- **`01_z_and_x.md`** — Tri-state buses, floating values, and simulator representation of unknown states.
+- **`02_logic_gate_delay.md`** — Propagation delays, critical paths, and empirical observation of simulator state evaluation during asynchronous transitions.
+- **`03_sequential_logic.md`** — Clocking, state retention, and feedback loops in hardware logic.
+- **`04_latches_flipflops.md`** — Architectural differences between level-triggered latches and edge-triggered flip-flops; strategies for preventing unwanted latch synthesis.
+- **`05_fsm_pattern_recognizer.md`** — Mealy vs. Moore state machines, state encoding, and sequence detection.
+- **`06_counter.md`** — Synchronous state counters, enable logic, and ripple carry propagation.
+- **`07_memory_hierarchy.md`** — Register files, RAM arrays, and address decoding structures.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 digital-design-architecture/
@@ -48,3 +48,4 @@ digital-design-architecture/
 │   └── hdl/                         # RISC-V CPU core implementation (.sv)
 ├── docs/                            # Deep-dive conceptual write-ups & logs
 └── test/                            # Unit testbenches (.sv) and vector stimulus files
+```

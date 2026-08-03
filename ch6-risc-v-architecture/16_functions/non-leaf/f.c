@@ -12,5 +12,6 @@ int f1(int a, int b) {
 int f2(int p) {
     int r;
     r = p + 5;
+
     return r + p;
 }

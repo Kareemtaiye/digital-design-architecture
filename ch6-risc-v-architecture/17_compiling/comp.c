@@ -13,5 +13,6 @@ void main() {
     f = 2;
     g = 3;
     y = func(f, g);
+    
     return;
 }

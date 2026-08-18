@@ -21,7 +21,7 @@ func:
     mv a0, s0
     call func
     add a0, a0, s0
-    j .LI
+    j .L1
 
 
 .text

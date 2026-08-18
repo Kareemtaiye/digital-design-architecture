@@ -7,7 +7,7 @@ func:
     sw ra, 12(sp)
     sw s0, 8(sp)
     mv s0, a0
-    addi a0, a1, a0
+    add a0, a1, a0
     bge a1, zero, .L5
 
 .L1:

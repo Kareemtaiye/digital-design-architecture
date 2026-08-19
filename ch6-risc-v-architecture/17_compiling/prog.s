@@ -19,6 +19,7 @@ main:
     sw a0, %lo(y)(a5)
     lw ra, 12(sp)
     addi sp, sp, 16
+    lw a0, zero
     jr ra
 
     .comm y, 4, 4

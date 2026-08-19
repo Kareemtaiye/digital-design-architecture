@@ -7,12 +7,12 @@ int func(int a, int b) {
     }
 }
 
-void main() {
+int main() {
     int f, g, y;
     
     f = 2;
     g = 3;
     y = func(f, g);
-    
-    return;
+
+    return 0;
 }

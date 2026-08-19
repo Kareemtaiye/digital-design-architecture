@@ -46,7 +46,7 @@ func:
     jr ra 
 
 .L5:
-    addi, a1, a1, -1
+    addi a1, a1, -1
     mv a0, s0
     call func
     add a0, a0, s0

@@ -6,3 +6,5 @@ sim_progra*
 *.out
 *.txt
 .DS_Store
+*.o
+prog

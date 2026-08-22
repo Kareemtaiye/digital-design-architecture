@@ -41,6 +41,15 @@ with `PC(of this jalr) + 4` (the return address). The read-before-write
 order matters: jalr reads rs1 before it writes rd, even when both happen to
 be the same register.
 
+> Important correction from earlier confusion: the computed jump target is
+> **never stored** anywhere — it's used only to set the next PC. The _only_
+> value ever written into `ra` is the return address, a completely separate
+> number from the jump target math.
+
+The `0` in `jalr`'s offset is a second, independent relocation
+(`R_RISCV_PCREL_LO12`), patched at the same time as auipc's placeholder,
+from the same symbol table lookup.
+
 ## Linker relaxation
 
 If the linker discovers the target actually **is** close enough for `jal`

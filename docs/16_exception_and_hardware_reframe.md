@@ -73,10 +73,3 @@ completely outside the instruction stream. That's the real reason the
 vocabulary shifts from "the program does" to "the hardware does" — it
 marks a boundary: everything past that line happens automatically, whether
 or not any instruction asked for it.
-
-**Mental substitution going forward:** whenever a text says "the hardware
-handles this," try substituting _"there's a register/mux/gate combination,
-wired to fire on a specific condition, with no instruction telling it to."_
-If that substitution doesn't resolve cleanly, that's the sign to dig into
-what's actually being described — which is exactly what Chapter 7 (building
-the actual microprocessor) will force into the open.

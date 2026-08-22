@@ -65,5 +65,5 @@ funct7 flips that inversion.
 
 The 5-bit `rs1`/`rs2`/`rd` fields are the same 5-bit addresses used in a
 32-entry register file (2^5 = 32). The encoding isn't inventing a new
-number — it's the same width you'd already hardcode in a `regfile` module's
+number — it's the same width already hardcode in a `regfile` module's
 address ports.

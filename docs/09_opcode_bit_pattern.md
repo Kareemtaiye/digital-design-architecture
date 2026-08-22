@@ -3,7 +3,7 @@
 ## The discovery
 
 While decoding instructions by hand, noticed the opcode bits themselves
-follow a structure — not just a flat lookup table. Every RV32I opcode ends
+follow a structure, not just a flat lookup table. Every RV32I opcode ends
 in `11` (bits 1:0), but bits 6:5 and bit 4 further narrow down the format
 family before you even need funct3/funct7.
 

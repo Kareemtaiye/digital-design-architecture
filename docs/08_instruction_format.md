@@ -3,7 +3,7 @@
 ## The core idea
 
 All RV32I instructions are 32 bits, always. Variable-length instructions would
-add decoder complexity, and a single format would be too restrictive — so
+add decoder complexity, and a single format would be too restrictive. So
 RISC-V compromises with four main formats. This is **Design Principle 4:
 good design demands good compromises.**
 

@@ -2,7 +2,7 @@
 
 ## The core distinction: architecture vs. microarchitecture
 
-A single ISA (instruction set architecture — the RV32I encoding, registers, memory model I already know) can be implemented by many different **microarchitectures**. Architecture defines _what_ a processor must do; microarchitecture defines _how_ it does it. Architectural state: the PC and the 32 registers, must exist in any correct implementation. Everything else a specific microarchitecture adds (extra registers, pipeline stages) is **nonarchitectural state**: hardware needed to make the implementation work, but not part of the definition of "what a RISC-V processor is." A program can never observe nonarchitectural state directly.
+A single ISA (instruction set architecture — the RV32I encoding, registers, memory model I already know) can be implemented by many different **microarchitectures**. Architecture defines _what_ a processor must do; microarchitecture defines _how_ it does it. Architectural state: the PC and the 32 registers, must exist in any correct implementation. Everything else a specific microarchitecture adds (extra registers, pipeline stages) is **nonarchitectural state**: hardware needed to make the implementation work, but not part of the definition of "what a RISC-V processor is." A program can never observe nonarchitectural state directly .
 
 ## Design process: state first, then combinational logic
 

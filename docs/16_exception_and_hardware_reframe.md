@@ -1,4 +1,4 @@
-# 10 — Exceptions, Interrupts, CSRs, and What "The Hardware" Actually Means
+# Exceptions, Interrupts, CSRs, and What "The Hardware" Actually Means
 
 ## The core reframe
 

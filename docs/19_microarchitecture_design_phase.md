@@ -1,4 +1,4 @@
-# 09 — Microarchitecture Design Space
+# Microarchitecture Design Space
 
 ## The core distinction: architecture vs. microarchitecture
 

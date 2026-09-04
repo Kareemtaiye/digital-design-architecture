@@ -1,4 +1,4 @@
-# 09 — Execution Modes and Privilege Levels
+# Execution Modes and Privilege Levels
 
 ## The core idea
 

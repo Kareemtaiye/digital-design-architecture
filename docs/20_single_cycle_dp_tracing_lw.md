@@ -38,3 +38,7 @@ While `lw` executes, a separate adder computes `PCNext = PC + 4` (instructions a
 | PC+4 adder                                      | New (small, dedicated adder)                                                    |
 
 The datapath isn't new hardware from scratch. It's the ch5 register file and ALU, plus a handful of new glue modules (PC, sign-extend, PC+4 adder), wired together with one new control signal (`RegWrite`) driving the write enable that was already sitting on the regfile's write port.
+
+## Examole Sketch -
+
+![Single Cycle Datapath](../assets/dp_sc_lw.png)

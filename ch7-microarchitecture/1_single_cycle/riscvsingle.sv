@@ -13,3 +13,5 @@ module riscvsingle(
     logic[2:0] ALUContril;
 
     controller c(Instr[6:0], );
+
+    datapath d();

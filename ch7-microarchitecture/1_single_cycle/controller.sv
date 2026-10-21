@@ -28,13 +28,7 @@ module controller (
       ResultSrc
   );
 
-  alu_decoder ad (
-      op[5],
-      funct3,
-      funct7b5,
-      ALUOp,
-      ALUControl
-  );
+
 
   assign PCSrc = Branch & Zero | Jump;
 endmodule

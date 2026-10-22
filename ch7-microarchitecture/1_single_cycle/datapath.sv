@@ -53,6 +53,18 @@ module datapath (
   );
 
 
+  // Register file logic
+  regfile rf (
+      .clk(clk),
+      .we3(RegWrite),
+      .ra1(Instr[19:15]),
+      .ra2(Instr[24:20]),
+      .wa3(Instr[11:7]),
+      .wd3(Result),
+      .rd1(SrcA),
+      .rd2(WriteData)
+  );
+
 
 
 endmodule

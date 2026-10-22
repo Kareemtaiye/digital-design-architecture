@@ -17,23 +17,23 @@ module controller (
   logic Branch;
 
   main_decoder md (
-      op,
-      RegWrite,
-      MemWrite,
-      Branch,
-      ALUSrc,
-      Jump,
-      ImmSrc,
-      ALUOp,
-      ResultSrc
+      .op(op),
+      .RegWrite(RegWrite),
+      .MemWrite(MemWrite),
+      .Branch(Branch),
+      .ALUSrc(ALUSrc),
+      .Jump(Jump),
+      .ImmSrc(ImmSrc),
+      .ALUOp(ALUOp),
+      .ResultSrc(ResultSrc)
   );
 
   alu_decoder ad (
-      op[5],
-      funct3,
-      funct7b5,
-      ALUOp,
-      ALUControl
+      .op(op),
+      .funct3(funct3),
+      .funct7b5(funct7b5),
+      .ALUOp(ALUOp),
+      .ALUControl(ALUControl)
   );
 
   assign PCSrc = Branch & Zero | Jump;

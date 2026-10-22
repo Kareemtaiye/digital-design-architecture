@@ -71,6 +71,17 @@ module datapath (
       .ImmExt(ImmExt)
   );
 
+  // ALU logic
+  mux2 #(
+      .WIDTH(32)
+  ) srcbmux (
+      .d0(WriteData),
+      .d1(ImmExt),
+      .s (ALUSrc),
+      .y (SrcB)
+  );
+
+
 
 
 endmodule

@@ -81,7 +81,7 @@ module datapath (
       .y (SrcB)
   );
 
-
+  alu alu(SrcA, SrcB, ALUControl, ALUResult, Zero)
 
 
 endmodule

@@ -89,7 +89,15 @@ module datapath (
       .zero(Zero)
   );
 
-
+  mux3 #(
+      .WIDTH(32)
+  ) resultmux (
+      .d0(ALUResult),
+      .d1(ReadData),
+      .d2(PCPlus4)
+      .s(ResultSrc),
+      .y(Result)
+  );
 
 
 endmodule

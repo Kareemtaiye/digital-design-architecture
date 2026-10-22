@@ -65,6 +65,12 @@ module datapath (
       .rd2(WriteData)
   );
 
+  extend ex (
+      .Instr (Instr[31:7]),
+      .ImmSrc(ImmSrc),
+      .ImmExt(ImmExt)
+  );
+
 
 
 endmodule

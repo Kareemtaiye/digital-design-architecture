@@ -4,7 +4,6 @@ sim_progra*
 *.vvp
 *.vcd
 *.out
-*.txt
 .DS_Store
 *.o
 prog

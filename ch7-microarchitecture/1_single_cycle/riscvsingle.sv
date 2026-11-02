@@ -18,7 +18,7 @@ module riscvsingle (
       .op(Instr[6:0]),
       .funct7b5(Instr[30]),
       .funct3(Instr[14:12]),
-      .zero(Zero),
+      .Zero(Zero),
       .RegWrite(RegWrite),
       .MemWrite(MemWrite),
       .ALUSrc(ALUSrc),

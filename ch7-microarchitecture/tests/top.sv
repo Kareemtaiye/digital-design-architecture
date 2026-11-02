@@ -26,10 +26,10 @@ module top (
   );
   dmem dmem (
       .clk(clk),
-      .MemWrite(MemWrite),
-      .DataAdr(DataAdr),
-      .WriteData(WriteData),
-      .ReadData(ReadData)
+      .we (MemWrite),
+      .a  (DataAdr),
+      .wd (WriteData),
+      .rd (ReadData)
   );
 
 endmodule

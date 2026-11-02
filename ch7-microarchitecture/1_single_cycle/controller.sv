@@ -2,7 +2,7 @@ module controller (
     input logic [6:0] op,
     input logic funct7b5,
     input logic [2:0] funct3,
-    input logic zero,
+    input logic Zero,
     output logic RegWrite,
     MemWrite,
     output logic ALUSrc,
@@ -29,12 +29,12 @@ module controller (
   );
 
   alu_decoder ad (
-      .op(op),
+      .opb5(op[5]),
       .funct3(funct3),
       .funct7b5(funct7b5),
       .ALUOp(ALUOp),
       .ALUControl(ALUControl)
   );
 
-  assign PCSrc = Branch & Zero | Jump;
+  assign PCSrc = (Branch & Zero) | Jump;
 endmodule

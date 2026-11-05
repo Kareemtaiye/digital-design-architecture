@@ -36,5 +36,5 @@ module controller (
       .ALUControl(ALUControl)
   );
 
-  assign PCSrc = (Branch & Zero) | Jump;
+  assign PCSrc = Branch & Zero | Jump;
 endmodule

@@ -21,6 +21,7 @@ module datapath (
   logic [31:0] SrcA, SrcB;
   logic [31:0] Result;
 
+
   //Next PC logic
   flopr #(
       .WIDTH(32)
@@ -98,6 +99,5 @@ module datapath (
       .s (ResultSrc),
       .y (Result)
   );
-
 
 endmodule

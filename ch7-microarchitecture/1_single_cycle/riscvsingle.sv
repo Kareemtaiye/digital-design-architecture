@@ -14,6 +14,8 @@ module riscvsingle (
   logic [1:0] ResultSrc, ImmSrc;
   logic [2:0] ALUControl;
 
+  assign DataAdr = ALUResult;
+
   controller c (
       .op(Instr[6:0]),
       .funct7b5(Instr[30]),
